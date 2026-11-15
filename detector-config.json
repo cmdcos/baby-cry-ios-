@@ -1,0 +1,13 @@
+{
+  "model_type": "baby-cry-detector-compact-cnn",
+  "task": "audio-classification",
+  "labels": ["cry", "non_cry"],
+  "sample_rate_hz": 16000,
+  "window_samples": 49152,
+  "window_seconds": 3.072,
+  "model_file": "detection.onnx",
+  "version": "v0.2",
+  "model_sha256": "654dd85892bc3f0eccfecdfa8c2466a1b42c22631fbf90629355bf72bf74526b",
+  "quality_gate": "audio-quality-gate-v0.2",
+  "release_status": "experimental_private_rights_review"
+}

@@ -1,0 +1,9 @@
+{
+  "appId": "com.personal.babycry",
+  "appName": "宝宝哭声小助手",
+  "webDir": "www",
+  "ios": {
+    "contentInset": "always",
+    "backgroundColor": "#f2e7d0"
+  }
+}

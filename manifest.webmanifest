@@ -1,0 +1,35 @@
+{
+  "lang": "zh-CN",
+  "dir": "ltr",
+  "name": "宝宝哭声小助手",
+  "short_name": "哭声小助手",
+  "description": "录 10 秒哭声，给出可能原因和安抚建议；所有数据只留在本机。",
+  "id": "./",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f7f1ea",
+  "theme_color": "#f7f1ea",
+  "categories": ["health", "parenting", "lifestyle"],
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "./icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

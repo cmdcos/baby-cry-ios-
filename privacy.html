@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#f7f1ea">
+<title>隐私说明 · 宝宝哭声小助手</title>
+<style>
+  :root {
+    --bg: #f7f1ea;
+    --surface: #fffdfa;
+    --ink: #2e2823;
+    --muted: #8d8075;
+    --line: #ece1d5;
+    --accent: #c9644b;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    line-height: 1.75;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 28px 20px 64px; }
+  .top { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 18px; }
+  .back { color: var(--accent); font-size: 13px; font-weight: 700; text-decoration: none; }
+  h1 { margin: 6px 0 4px; font-size: 28px; letter-spacing: -.03em; }
+  .date { margin: 0 0 20px; color: var(--muted); font-size: 12px; }
+  .lead {
+    padding: 16px 18px; margin: 0 0 18px;
+    background: var(--surface); border: 1px solid var(--line);
+    border-radius: 18px; font-size: 14px;
+  }
+  h2 { margin: 26px 0 8px; font-size: 16px; }
+  p { margin: 0 0 10px; font-size: 13.5px; }
+  ul { margin: 0 0 10px; padding-left: 20px; font-size: 13.5px; }
+  li { margin: 3px 0; }
+  .muted { color: var(--muted); font-size: 12px; }
+  .card {
+    padding: 16px 18px; margin: 10px 0 16px;
+    background: var(--surface); border: 1px solid var(--line);
+    border-radius: 18px;
+  }
+  code {
+    padding: 1px 5px; border-radius: 5px;
+    background: #f2e8de; font-size: 12px;
+    font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  }
+  a { color: var(--accent); }
+  footer { margin-top: 30px; padding-top: 14px; border-top: 1px solid var(--line); color: var(--muted); font-size: 11.5px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <a class="back" href="./index.html">← 返回 App</a>
+    <span class="muted">本地优先 · 不上传</span>
+  </div>
+
+  <h1>隐私说明</h1>
+  <p class="date">最后更新：2026-11-14</p>
+
+  <p class="lead"><b>一句话：</b>录音只在你的浏览器里处理；本站不上传、不保存音频；没有账号、没有广告、没有第三方统计。</p>
+
+  <h2>1. 这个站点处理什么</h2>
+  <ul>
+    <li><b>麦克风录音</b>：只有你点“录音”时才申请麦克风权限；录音在浏览器内存中用于本地分析，分析结束后不会自动保存音频。</li>
+    <li><b>本地记录</b>：结果（时间、类别、概率、你填的上下文/反馈）保存在浏览器的 <code>localStorage</code> 中，只存在你的设备上。</li>
+    <li><b>宝宝资料</b>：昵称/出生日期由你自愿填写，只存本机；可以留空。</li>
+    <li><b>模型文件</b>：页面会从本站下载一个预训练模型文件（约 8.3 MB）；模型只做本地推理，不会把你的录音发送给模型作者或任何服务器。</li>
+  </ul>
+
+  <h2>2. 这个站点不做什么</h2>
+  <ul>
+    <li>不需要注册/登录，不收集手机号、邮箱、位置、通讯录。</li>
+    <li>不设置广告 Cookie，不接第三方统计/追踪 SDK。</li>
+    <li>不上传原始录音，不做云端分析。</li>
+    <li>不把数据用于训练模型。</li>
+  </ul>
+
+  <h2>3. 托管服务商的访问日志</h2>
+  <p>本站是静态站点，托管服务商（例如 Cloudflare Pages、GitHub Pages 或你自己的服务器）可能为安全、防滥用和运营目的记录访问日志，例如 IP 地址、访问时间、User-Agent、请求路径。这些日志由托管服务商按其政策保存，本站不把它们用于用户画像或广告。</p>
+
+  <h2>4. 数据删除</h2>
+  <ul>
+    <li>在 App 的“设置 → 数据与隐私 → 清空所有数据”可以删除宝宝资料和记录。</li>
+    <li>清除浏览器站点数据/换浏览器/卸载 PWA 也会删除本机 <code>localStorage</code>。</li>
+    <li>已经下载到本机的模型文件可以随浏览器缓存一起清除。</li>
+  </ul>
+
+  <h2>5. 模型与许可</h2>
+  <p>当前使用 <code>manfye/baby-cry-reasoning</code> v0.6（Extra Trees，6 类，CC BY-SA 4.0）作为实验性原因提示。模型卡明确标注：开发集准确率约 62%、外部验证约 34%、<code>release_ready=false</code>，<b>不能用于诊断、婴儿监测或照护决策</b>。模型加载失败时会回退到规则演示。</p>
+
+  <h2>6. 医疗免责声明</h2>
+  <div class="card">
+    <p>本工具是育儿辅助/实验工具，不提供医疗诊断，不能替代医生。结果只表示“这段录音与训练数据中某类的相似度”，不是宝宝的真实需求或健康状态。</p>
+    <p>如宝宝出现发热（尤其 3 个月以下）、呼吸费力/口唇发紫、精神反应差、持续尖叫无法安抚、呕吐/皮疹，请及时就医。</p>
+  </div>
+
+  <h2>7. 联系</h2>
+  <p>本站为个人自用项目，没有账号体系或在线客服。如需联系，请通过域名注册信息中的联系方式，或在部署时替换本段为你的邮箱。</p>
+
+  <h2>8. 变更</h2>
+  <p>如果以后增加云端分析、账号、统计或广告，本说明会更新，并在使用前重新征得同意。</p>
+
+  <footer>
+    <p>宝宝哭声小助手 · 本地实验版 · <a href="./index.html">返回 App</a></p>
+    <p>本页不加载任何第三方资源，不执行统计脚本。</p>
+  </footer>
+</div>
+</body>
+</html>
